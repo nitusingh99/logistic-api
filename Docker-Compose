@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+  mysql-db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: logistics
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"

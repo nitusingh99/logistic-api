@@ -1,2 +1,2 @@
-# logistic-api
+# logistics-api
 # project using copilot
